@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>ТР-22 Грищук Анжеліка Володимирівна. Варіант №5</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted id="background-video">
+            <source src="/img/Relaxing Nature.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1 class="header-PIB">ТР-22 Грищук Анжеліка Володимирівна. Варіант №5</h1>
+            <p>Адаптивний веб-дизайн. Медіа-запити.</p>
+        </header>
+    </div>
+
+  <form id="registrationForm">
+    <div class="registration-form">
+        <h2>Реєстраційна форма</h2>
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" required>
+
+            <label for="group">Група:</label>
+            <input type="text" id="group" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Розпочати тестування</button>
+          </form>
+    </div>
+
+
+    <div class="test-container" >
+      <h2>Тест</h2>
+  <fieldset>
+  <legend>Запитання 1: Що таке адаптивний веб-дизайн?</legend>
+  <label>
+    <input type="radio" name="q1" value="a" />
+    Підхід до веб-дизайну, який забезпечує оптимальний вигляд та
+    функціональність на різних пристроях та розмірах екранів.
+  </label>
+  <label>
+    <input type="radio" name="q1" value="b" />
+    Створення веб-сайтів тільки для мобільних пристроїв.
+  </label>
+  <label>
+    <input type="radio" name="q1" value="c" />
+    Виключення функціоналу для мобільних користувачів.
+  </label>
+</fieldset>
+
+      <!-- Запитання з кількома вірними відповідями (checkbox) -->
+      <fieldset>
+        <legend>Запитання 2: Які основні типи медіа-запитів існують?</legend>
+        <label>
+          <input type="checkbox" name="q2" value="a" />
+          screen
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="b" />
+          device
+        </label>
+        <label>
+          <input type="checkbox" name="q2" value="c" />
+          print
+        </label>
+      </fieldset>
+
+      <!-- Питання з вибором відповіді з списку -->
+      <fieldset>
+        <legend>
+          Запитання 3: Як правильно використовувати медіа-запит для стилізації
+          для пристроїв з екраном шириною менше 768 пікселів?
+        </legend>
+        <select name="q3">
+          <option value="a">
+            @media screen and (min-width: 768px) { ... }
+          </option>
+          <option value="b">
+            @media screen and (max-width: 768px) { ... }
+          </option>
+          <option value="c">@media (max-width: 768px) { ... }</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Запитання 4: Завдання на встановлення послідовності виконання:
+        </legend>
+        <div id="draggable-container">
+          <div class="draggable-item" data-value="a" draggable="true">a</div>
+          <div class="draggable-item" data-value="b" draggable="true">b</div>
+          <div class="draggable-item" data-value="c" draggable="true">c</div>
+        </div>
+        <div id="droppable-container">
+          <div class="droppable-area" data-value="a">
+            1 - Медіа-запит для друку
+          </div>
+          <div class="droppable-area" data-value="b">
+            2 - Медіа-запит для екрану шириною менше 768 пікселів
+          </div>
+          <div class="droppable-area" data-value="c">
+            3 - Медіа-запит для пристроїв з високою щільністю пікселів
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Питання 5: Який сайт додався до класичного вебсайта з появою мобільного інтернету?</legend>
+        <label>
+          <input type="text" name="q5" id="q5" placeholder="Введіть вашу відповідь"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Запитання 6: Що таке "ретинізація" зображень?</legend>
+          <label>
+          <input type="radio" name="q6" value="a" />
+          Процес створення зображень для друку.
+        </label>
+        <label>
+          <input type="radio" name="q6" value="b" />
+          Підготовка зображень високої роздільності для відображення на екранах пристроїв з високою щільністю пікселів.
+        </label>
+        <label>
+          <input type="radio" name="q6" value="c" />
+          Зменшення розмірів зображень для прискорення завантаження веб-сайту.
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Запитання 7: Як можна використовувати медіа-запити для стилізації для друку?</legend>
+<label>
+          <input type="radio" name="q7" value="a" />
+          @media print { ... }
+        </label>
+        <label>
+          <input type="radio" name="q7" value="b" />
+          @media screen { ... }        </label>
+        <label>
+          <input type="radio" name="q7" value="c" />
+          @media handheld { ... }
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Запитання 8: Як правильно визначити медіа-запит для роздільної здатності екрану?</legend>
+<label>
+          <input type="radio" name="q8" value="a" />
+          @media resolution: 300dpi { ... }
+        </label>
+        <label>
+          <input type="radio" name="q8" value="b" />
+          @media (resolution: 300dpi) { ... }
+        </label>
+        <label>
+          <input type="radio" name="q8" value="c" />
+          @media screen and (resolution: 300dpi) { ... }
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Запитання 9: Для чого використовується атрибут srcset тега img?</legend>
+<label>
+          <input type="radio" name="q9" value="a" />
+          Визначення розмірів зображення.
+        </label>
+        <label>
+          <input type="radio" name="q9" value="b" />
+          Вказівка альтернативного тексту для зображення.
+        </label>
+        <label>
+          <input type="radio" name="q9" value="c" />
+          Вибір різних зображень в залежності від розміру екрану.
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Запитання 10: Які можливості надає медіа-запит min-device-pixel-ratio</legend>
+<label>
+          <input type="radio" name="q10" value="a" />
+         Встановлення мінімального розширення екрану.
+        </label>
+        <label>
+          <input type="radio" name="q10" value="b" />
+        Встановлення мінімального розширення пікселів на дюйм для пристрою.       
+        </label>
+        <label>
+          <input type="radio" name="q10" value="c" />
+          Встановлення мінімального співвідношення пікселів на екрані до фізичного розміру екрану.
+        </label>
+      </fieldset>
+
+      <button id="finishTestButton" type="submit" class="button">
+        Закінчити тест
+      </button>
+    </div>
+
+    <div id="result" class="test-container" style="display: none">
+        <h2>Результати тестування</h2>
+        <p id="userName"></p>
+        <p id="userGroup"></p>
+        <p id="userEmail"></p>
+        <p id="score"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
